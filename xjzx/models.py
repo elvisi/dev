@@ -42,7 +42,7 @@ class NewsInfo(db.Model, BaseModel):
     pic = db.Column(db.String(50))
     title = db.Column(db.String(30))
     summary = db.Column(db.String(200))
-    context = db.Column(db.Text)
+    content = db.Column(db.Text)
     user_id = db.Column(db.Integer, db.ForeignKey('user_info.id'))
     source = db.Column(db.String(20), default='')
     click_count = db.Column(db.Integer, default=0)
