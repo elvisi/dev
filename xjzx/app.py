@@ -15,6 +15,11 @@ def create_app(config):
     from flask_wtf.csrf import CSRFProtect
     CSRFProtect(app)
 
+    from flask_session import Session
+    Session(app)
+
+
+
     # 设置日志的记录等级
     logging.basicConfig(level=logging.DEBUG)  # 调试debug级
     # 创建日志记录器，指明日志保存的路径、每个日志文件的最大大小、保存的日志文件个数上限

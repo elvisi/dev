@@ -210,8 +210,14 @@ $(function () {
     $('#logout').click(function () {
         $.post('/user/logout',{'csrf_token':$('#csrf_token').val()},function (data) {
             if (data.result==1){
-                $('.user_btns').show();
-                $('.user_login').hide()
+                if (location.pathname=='/user/'){
+                     // 当user退出时需要转到首页
+                    location.href='/'; // 在js中重定向
+                } else {
+                    // 当首页、详细页退出时进行div切换
+                    $('.user_btns').show();
+                    $('.user_login').hide();
+                }
             }
             
         });
