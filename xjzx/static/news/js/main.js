@@ -282,7 +282,7 @@ function fnChangeMenu(n) {
     if (n >= 0) {
         $li.eq(n).addClass('active').siblings().removeClass('active');
         // 执行 a 标签的点击事件
-        $li.eq(n).find('a')[0].click()
+        // $li.eq(n).find('a')[0].click()
     }
 }
 

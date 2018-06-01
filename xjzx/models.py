@@ -10,8 +10,8 @@ db = SQLAlchemy()
 
 
 class BaseModel(object):
-    create_time = db.Column(db.DateTime, default=datetime.now())
-    update_time = db.Column(db.DateTime, default=datetime.now())
+    create_time = db.Column(db.DateTime, default=datetime.now)
+    update_time = db.Column(db.DateTime, default=datetime.now)
     isDelete = db.Column(db.Boolean, default=False)
 
 
@@ -51,9 +51,9 @@ class NewsInfo(db.Model, BaseModel):
     reason = db.Column(db.String(100), default='')
     comments = db.relationship('NewsComment', backref='news', lazy='dynamic', order_by='NewsComment.id.desc()')
 
-    # @property
-    # def pic_url(self):
-    #     return current_app.config.get('QINIU_URL') + self.pic
+    @property
+    def pic_url(self):
+        return current_app.config.get('QINIU_URL') + self.pic
     #
     # def to_index_dict(self):
     #     return {
@@ -73,7 +73,7 @@ class UserInfo(db.Model, BaseModel):
     id = db.Column(db.Integer, primary_key=True)
     avatar = db.Column(db.String(50), default='user_pic.png')
     nick_name = db.Column(db.String(20))
-    signature = db.Column(db.String(200),default='这货很懒什么也没有写')
+    signature = db.Column(db.String(200), default='这货很懒什么也没有写')
     public_count = db.Column(db.Integer, default=0)
     follow_count = db.Column(db.Integer, default=0)
     mobile = db.Column(db.String(11))
@@ -110,8 +110,8 @@ class UserInfo(db.Model, BaseModel):
 
     @property  # 调用方法user.avatar_url
     def avatar_url(self):
-         # return "/static/news/images/" + self.avatar
-         return current_app.config.get('QINIU_URL') + self.avatar
+        # return "/static/news/images/" + self.avatar
+        return current_app.config.get('QINIU_URL') + self.avatar
 
 
 class NewsComment(db.Model, BaseModel):

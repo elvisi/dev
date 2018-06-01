@@ -10,7 +10,7 @@ $(function () {
 
         var signature = $("#signature").val()
         var nick_name = $("#nick_name").val()
-        var gender = $(".gender").val()
+        var gender = $(".gender:checked").val()
         var csrf_token = $("#csrf_token").val()
 
         if (!nick_name) {

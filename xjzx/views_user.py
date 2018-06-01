@@ -1,5 +1,7 @@
+from datetime import datetime
+
 from flask import Blueprint, make_response, request, session, jsonify, current_app, render_template, redirect
-from models import db, UserInfo
+from models import db, UserInfo, NewsInfo, NewsCategory
 
 user_blueprint = Blueprint('user', __name__, url_prefix='/user')
 
@@ -167,11 +169,15 @@ def base():
         signature = dict1.get('signature')
         nick_name = dict1.get('nick_name')
         gender = dict1.get('gender')
+        if gender == 'True':
+            gender = True
+        else:
+            gender = False
         # 查询（展示时也需要查询，所以将代码在上面写一遍）
         # 为属性赋值
         user.signature = signature
         user.nick_name = nick_name
-        user.gender = bool(gender)
+        user.gender = gender
 
         # 提交数据库
         db.session.commit()
@@ -180,53 +186,262 @@ def base():
         return jsonify(result=1)
 
 
-@user_blueprint.route('/pic',methods=['GET','POST'])
+@user_blueprint.route('/pic', methods=['GET', 'POST'])
 @login_required
 def pic():
-    user_id=session['user_id']
-    user=UserInfo.query.get(user_id)
+    user_id = session['user_id']
+    user = UserInfo.query.get(user_id)
 
-    if request.method=='GET':
-        return render_template('news/user_pic_info.html',user=user)
-    elif request.method=='POST':
+    if request.method == 'GET':
+        return render_template('news/user_pic_info.html', user=user)
+    elif request.method == 'POST':
         # 接收文件
-        avatar=request.files.get('avatar')
+        avatar = request.files.get('avatar')
         # 上传到七牛云，并返回文件名
         from utills.qiniu_xjzx import upload_pic
-        filename=upload_pic(avatar)
+        filename = upload_pic(avatar)
 
         # 修改用户的头像属性
-        user.avatar=filename
+        user.avatar = filename
 
         # 提交保存到数据库
         db.session.commit()
 
         # 返回响应
-        return jsonify(result=1,avatar=user.avatar_url)
+        return jsonify(result=1, avatar=user.avatar_url)
+
 
 @user_blueprint.route('/follow')
 @login_required
 def follow():
-    return render_template('news/user_follow.html')
+    user_id = session['user_id']
+    user = UserInfo.query.get(user_id)
+
+    # 获取当前页码值
+    page = int(request.args.get('page', '1'))
+
+    # 通过关联属性获取关注的用户对象
+    # 对查询的数据进行分页
+    pagination = user.follow_user.paginate(page, 4, False)
+    # 获取当前页的数据
+    user_list = pagination.items
+    # 获取总页数
+    total_page = pagination.pages
+
+    return render_template(
+        'news/user_follow.html',
+        user_list=user_list,
+        total_page=total_page,
+        page=page
+
+    )
 
 
-@user_blueprint.route('/pwd')
+@user_blueprint.route('/pwd', methods=['GET', 'POST'])
 @login_required
 def pwd():
-    return render_template('news/user_pass_info.html')
+    if request.method == 'GET':
+        # 展示页面，供用户输入密码
+        return render_template('news/user_pass_info.html')
+    elif request.method == 'POST':
+        # 接收用户输入，进行密码更改
+        # 1.接收数据
+        dict1 = request.form
+        current_pwd = dict1.get('current_pwd')
+        new_pwd = dict1.get('new_pwd')
+        new_pwd2 = dict1.get('new_pwd2')
+        # 2.验证
+        # 2.1值不为空
+        if not all([current_pwd, new_pwd, new_pwd2]):
+            return render_template(
+                'news/user_pass_info.html',
+                msg='请将信息填写完成'
+            )
+        # 2.2密码长度
+        import re
+        if not re.match(r'[a-zA-Z0-9_]{6,20}', current_pwd):
+            return render_template(
+                'news/user_pass_info.html',
+                msg='当前密码错误'
+            )
+
+        if not re.match(r'[a-zA-Z0-9_]{6,20}', new_pwd):
+            return render_template(
+                'news/user_pass_info.html',
+                msg='新密码格式错误'
+            )
+
+        # 2.3两个新密码一致
+        if new_pwd != new_pwd2:
+            return render_template(
+                'news/user_pass_info.html',
+                msg='两次密码输入不一致'
+            )
+        # 2.4查询对象，当前密码正确
+        user = UserInfo.query.get(session['user_id'])
+        if not user.check_pwd(current_pwd):
+            return render_template(
+                'news/user_pass_info.html',
+                msg='当前密码错误'
+            )
+
+        # 查询对象，修改属性
+        user.password = new_pwd
+        # 提交
+        db.session.commit()
+        # 响应
+        return render_template(
+            'news/user_pass_info.html',
+            msg='密码修改成功'
+        )
 
 
 @user_blueprint.route('/collect')
 @login_required
 def collect():
-    return render_template('news/user_collection.html')
+    user_id = session['user_id']
+    user = UserInfo.query.get(user_id)
+    # 获取当前的页码值
+    page = int(request.args.get('page', '1'))
+    # 当前用户收藏的新闻列表
+    pagination = user.news_collect.order_by(NewsInfo.update_time.desc()).paginate(page, 6, False)
+    # 获取当前页的数据
+    news_list = pagination.items
+    # 获取总页码值
+    total_page = pagination.pages
+
+    return render_template(
+        'news/user_collection.html',
+        news_list=news_list,
+        total_page=total_page,
+        page=page
+    )
 
 
-@user_blueprint.route('/release')
+@user_blueprint.route('/release', methods=['GET', 'POST'])
+@login_required
 def release():
-    return render_template('news/user_news_release.html')
+    # 查询所有分类
+    category_list = NewsCategory.query.all()
+    if request.method == 'GET':
+
+        return render_template(
+            'news/user_news_release.html',
+            category_list=category_list
+        )
+    elif request.method == 'POST':
+        # 接收用户填写的数据，创建新闻对象，保存到数据库中
+        # 1.接收用户输入的数据
+        dict1 = request.form
+        title = dict1.get('title')
+        category_id = int(dict1.get('category'))
+        summary = dict1.get('summary')
+        content = dict1.get('content')
+        # 1.2接收文件
+        news_pic = request.files.get('news_pic')
+
+        # 2.验证
+        # 2.1数据不为空
+        if not all([title, category_id, summary, content, news_pic]):
+            return render_template(
+                'news/user_news_release.html',
+                category_list=category_list,
+                msg='数据不能为空'
+            )
+
+        # 将文件上传到七牛云，并返回文件名
+        from utills.qiniu_xjzx import upload_pic
+        filename = upload_pic(news_pic)
+
+        # 3.创建对象并赋值
+        news = NewsInfo()
+        news.category_id = category_id
+        news.pic = filename
+        news.title = title
+        news.summary = summary
+        news.content = content
+        news.user_id = session['user_id']
+
+        # 4.提交数据到数据库
+        db.session.add(news)
+        db.session.commit()
+        # 4.响应：转到列表页面
+        return redirect("/user/news_list")
 
 
 @user_blueprint.route('/news_list')
+@login_required
 def news_list():
-    return render_template('news/user_news_list.html')
+    user_id = session['user_id']
+    user = UserInfo.query.get(user_id)
+    # 接收page
+    page = int(request.args.get("page", "1"))
+    # 使用关联属性访问发布的对象
+    pagination = user.news.order_by(NewsInfo.update_time.desc()).paginate(page, 6, False)
+    # 获取当前页的数据
+    news_list = pagination.items
+    # 总页码
+    total_page = pagination.pages
+
+    return render_template(
+        'news/user_news_list.html',
+        news_list=news_list,
+        page=page,
+        total_page=total_page
+
+    )
+
+
+@user_blueprint.route('/release_update/<int:news_id>', methods=['GET', 'POST'])
+@login_required
+def release_update(news_id):
+    news = NewsInfo.query.get(news_id)
+    category_list = NewsCategory.query.all()
+    if request.method == 'GET':
+        return render_template(
+            'news/user_news_update.html',
+            news=news,
+            category_list=category_list
+        )
+    elif request.method == 'POST':
+        # 接收用户填写的数据，修改新闻对象，保存到数据库中
+        # 1.接收用户输入的数据
+        dict1 = request.form
+        title = dict1.get('title')
+        category_id = int(dict1.get('category'))
+        summary = dict1.get('summary')
+        content = dict1.get('content')
+        # 1.2接收文件
+        news_pic = request.files.get('news_pic')
+
+        # 2.验证
+        # 2.1数据不为空，不需要验证图片，因为用户可以不用修改图片，则不上传文件
+        if not all([title, category_id, summary, content]):
+            return render_template(
+                'news/user_news_release.html',
+                category_list=category_list,
+                msg='数据不能为空'
+            )
+
+        # 将文件上传到七牛云，并返回文件名
+        if news_pic:
+            from utills.qiniu_xjzx import upload_pic
+            filename = upload_pic(news_pic)
+
+        # 3.将查询到的对象属性赋值
+        news.category_id = category_id
+        if news_pic:
+            news.pic = filename
+        news.title = title
+        news.summary = summary
+        news.content = content
+        news.user_id = session['user_id']
+        # 修改时，更新为最新的时间
+        news.update_time = datetime.now()
+        # 修改时，将状态设置成'待审核'
+        news.status = 1
+
+        # 4.提交数据到数据库
+        db.session.commit()
+        # 4.响应：转到列表页面
+        return redirect("/user/news_list")

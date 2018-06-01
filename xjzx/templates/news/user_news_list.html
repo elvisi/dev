@@ -3,32 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>用户中心</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.pagination.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/jquery.pagination.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/news/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/static/news/css/jquery.pagination.css">
+    <link rel="stylesheet" type="text/css" href="/static/news/css/main.css">
+    <script type="text/javascript" src="/static/news/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="/static/news/js/jquery.pagination.min.js"></script>
 </head>
 <body class="inframe_body">
     <div class="news_list">
         <h3>新闻列表</h3>
         <ul class="article_list">
-            <li><a href="user_news_release.html">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="pass">已通过</em><span>2018-1-17</span></li>
-            <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="pass">已通过</em><span>2018-1-17</span></li>
-            <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="review">审核中</em><span>2018-1-17</span></li>
-            <li><a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a><em class="review">审核中</em><span>2018-1-17</span></li>
-            <li>
-                <a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a>
-                <em class="nopass">未通过</em>
-                <span>2018-1-17</span>
-                <b>未通过原因：因为写的太boring,因为写的太boring,因为写的太boring,因为写的太boring,</b>
-            </li>
-            <li>
-                <a href="#">智能音箱“不智能”：这次轮到三星语音助手Bixby被吐槽了</a>
-                <em class="nopass">未通过</em>
-                <span>2018-1-17</span>
-                <b>未通过原因：因为写的太煽情,因为写的太煽情,因为写的太煽情,因为写的太煽情,</b>
-            </li>
+            {% for news in news_list %}
+                <li>
+                    <a href="/user/release_update/{{ news.id }}">{{ news.title }}</a>
+                    {% if news.status==1 %}
+                        <em class="review">审核中</em>
+
+                    {% elif news.status==2 %}
+                        <em class="pass">已通过</em>
+
+                    {% elif news.status==3 %}
+                        <em class="nopass">未通过</em><b>{{ news.reason }}</b>
+                    {% endif %}
+                    <span>{{ news.update_time }}</span>
+                </li>
+            {% endfor %}
         </ul>
         <div id="pagination" class="page"></div>
         <script>
@@ -37,13 +36,17 @@
 
             $(function(){
                 $("#pagination").pagination({
-                    currentPage: 2,
-                    totalPage: 3,
+                    currentPage: {{ page }},
+                    totalPage: {{ total_page }},
                     callback: function(current) {
-                        alert('ok!');
+                        location.href='?page='+current;
                     }
                 });
             });
+                    // // 选中索引为6的左边单菜单
+        window.parent.fnChangeMenu(6)
+        // // 滚动到顶部
+        window.parent.scrollTo(0, 0)
         </script>
        
     </div>
