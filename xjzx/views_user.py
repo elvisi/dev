@@ -116,7 +116,7 @@ def login():
             # 状态保持
             session['user_id'] = user.id
             # 返回成功的结果,返回用户的头像，返回用户的名字
-            return jsonify(result=4, avatar=user.avatar, nic_name=user.nick_name)
+            return jsonify(result=4, avatar=user.avatar_url, nick_name=user.nick_name)
         else:
             # 密码错误
             return jsonify(result=3)
@@ -369,7 +369,7 @@ def release():
         return redirect("/user/news_list")
 
 
-@user_blueprint.route('/news_list')
+@user_blueprint.route('/newslist')
 @login_required
 def news_list():
     user_id = session['user_id']

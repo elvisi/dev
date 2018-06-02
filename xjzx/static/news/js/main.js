@@ -132,7 +132,7 @@ $(function () {
                 // 显示个人信息
                 $('.user_login').show();
 
-                $('.lgin_pic').attr('src','/static/news/images/'+data.avatar);
+                $('.lgin_pic').attr('src',data.avatar);
                 $('#nick_name').text(data.nick_name);
             }
         });

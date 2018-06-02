@@ -1,9 +1,10 @@
 {% extends 'news/base.html' %}
 
-
+{% block head %}
+	<script type="text/javascript" src="/static/news/js/jquery.form.min.js"></script>
+{% endblock %}
 
 {% block body %}
-
     <div class="conter_con">
         <div class="user_menu_con fl">
             <div class="user_center_pic">
@@ -18,7 +19,7 @@
                 <li><a href="/user/pwd" target="main_frame">密码修改</a></li>
                 <li><a href="/user/collect" target="main_frame">我的收藏</a></li>
                 <li><a href="/user/release" target="main_frame">新闻发布</a></li>
-                <li><a href="/user/news_list" target="main_frame">新闻列表</a></li>
+                <li><a href="/user/newslist" target="main_frame">新闻列表</a></li>
             </ul>
         </div>
 
@@ -26,21 +27,4 @@
             <iframe src="/user/base" frameborder="0" name="main_frame" class="main_frame" id="main_frame"></iframe>
         </div>
     </div>
-     <div class="footer">
-        <div class="footer_links">
-            <a href="">关于我们</a>
-            <span>|</span>
-            <a href="">联系我们</a>
-            <span>|</span>
-            <a href="">招聘人才</a>
-            <span>|</span>
-            <a href="">友情链接</a>
-        </div>
-        <p class="copyright">
-            CopyRight © 2018 新经资讯信息技术有限公司 All Rights Reserved<br/>
-            电话：010-****888 京ICP备*******8号
-        </p>
-    </div>
-
-
 {% endblock %}
