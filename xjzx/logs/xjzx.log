@@ -3216,3 +3216,833 @@ INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 11:42:58] "GET /newslist?page=1&
 INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 11:42:58] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 11:42:59] "GET /newslist?page=1&category_id=1 HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 11:42:59] "GET /newslist?page=1&category_id=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:00] "GET /4444 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:00] "GET /images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:00] "GET /images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:09] "GET /4444 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:09] "GET /images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:09] "GET /images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:31] "GET /4444 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:31] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:31] "GET /images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:31] "GET /images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:33] "GET /4444 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:33] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:33] "GET /images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:33] "GET /images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:46] "GET /4444 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:46] "GET /images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:46] "GET /images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:57] "GET /4444 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:57] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:08:57] "GET /images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:09:51] "GET /index.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:09:51] "GET /images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:09:52] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:09:52] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:09:52] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:34] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:34] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:34] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:35] "GET /newslist?page=2&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:41] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:41] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:41] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:42] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:40:42] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:03] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:10] "POST /user/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:12] "POST /user/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:13] "POST /user/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:13] "POST /user/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:13] "POST /user/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:15] "POST /user/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:16] "POST /user/login HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF session token is missing.
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:16] "POST /user/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:19] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:30] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:34] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:34] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:34] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:34] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:34] "GET /images/user_pic.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:35] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:35] "GET /static/news/images/focus_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:35] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:35] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:35] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:35] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:35] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:59] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:59] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:59] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:59] "GET /images/user_pic.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:41:59] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:05] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:05] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:05] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:05] "GET /images/user_pic.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:05] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:09] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:09] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:09] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:09] "GET /images/user_pic.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:42:09] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:54:58] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:54:59] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:54:59] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:54:59] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:58:39] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:58:39] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:58:39] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 20:58:39] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:34] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:34] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:34] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:34] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:37] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:37] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:37] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:11:37] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:12:07] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:12:07] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:12:07] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:12:11] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:12:11] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:12:11] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:12:11] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:16:43] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:16:43] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:16:43] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:16:43] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:38:54] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:38:54] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:38:54] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:38:54] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:09] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:09] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:09] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:09] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:25] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:25] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:25] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:25] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:31] "GET /3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:31] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:31] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:31] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:34] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:34] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:34] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:34] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:41] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:41] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:41] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [02/Jun/2018 21:39:41] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:24] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:25] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:25] "GET /static/news/images/hit_icon.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:25] "GET /static/news/images/focus_icons.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:25] "GET /static/news/images/reply_icon.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:25] "GET /static/news/images/zan_icon.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:25] "GET /static/news/images/comment_icon.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:25] "GET /static/news/images/clock.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/focus_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:52] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:53] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:17:53] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:18:02] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:18:04] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:13] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:13] "GET /static/news/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:13] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:13] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:14] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:17] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:17] "GET /static/news/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:17] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:17] "GET /user/base HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:17] "GET /static/news/js/user_base_info.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:18] "GET /user/collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:18] "GET /static/news/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:18] "GET /static/news/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:20] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:20] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:20] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:20] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:23] "GET /10 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:23] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:23] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:23] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:31] "GET /6 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:31] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:31] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:31] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:34] "GET /10 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:34] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:34] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:34] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:39] "GET /9 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:39] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:39] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:39] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:41] "GET /8 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:41] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:41] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:41] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:43] "GET /7 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:43] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:43] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:43] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:49] "GET /7 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:49] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:49] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:49] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:57] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:39:57] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:01] "GET /22 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:01] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:01] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:01] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:04] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:04] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:05] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:05] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:05] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:05] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:07] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:07] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:07] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:08] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:08] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:08] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:09] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:10] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:10] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:10] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:11] "GET /11 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:11] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:11] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:12] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:13] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:13] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:13] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:13] "GET /newslist?page=2&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:15] "GET /8 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:15] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:15] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:15] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:16] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:16] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:16] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:17] "GET /newslist?page=2&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:18] "GET /8 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:18] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:18] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:18] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:19] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:19] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:19] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:19] "GET /newslist?page=2&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:20] "GET /newslist?page=3&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:21] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:21] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:21] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:21] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:40:23] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/focus_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:30] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:31] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:31] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:40] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:42] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:44] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:44] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:45] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:45] "GET /images/cat.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:45] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:45] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:45] "GET /images/worm.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:47] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:48] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:48] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:49] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 10:41:49] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:29] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:29] "GET /static/news/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:29] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:29] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:29] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:31] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:31] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:36] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:44:36] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:25] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:25] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/focus_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:39] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:47] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:49:59] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:50:14] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:50:15] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:08] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:08] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:08] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:25] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:25] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:45] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:45] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:45] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:56] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:54:56] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:35] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:35] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:36] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:40] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:40] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:41] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:43] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:43] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:43] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:45] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:45] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:45] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:45] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:45] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:45] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:48] "GET /3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:48] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:48] "GET /comment/list/3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:53] "GET /3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:53] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:53] "GET /comment/list/3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:54] "GET /8 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:54] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:54] "GET /comment/list/8 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:57] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:57] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:55:57] "GET /comment/list/19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:44] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:45] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:45] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:46] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:47] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:48] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:48] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:48] "GET /comment/list/19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:56] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:57] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:56:57] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/focus_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:18] "GET /comment/list/19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:26] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:34] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:38] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:38] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:38] "GET /comment/list/19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:44] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:45] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:45] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:56] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:58] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:58] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:57:59] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:58:00] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:58:01] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:58:02] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:58:02] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:58:05] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 16:58:21] "GET /comment/add HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:07] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:07] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:07] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:10] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:10] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:10] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:11] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:11] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:11] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:14] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:14] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:14] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:23] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:23] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:26] "GET /19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:26] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:26] "GET /comment/list/19 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:29] "POST /collect HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:34] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:02:34] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:02] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:02] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:02] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:02] "GET /newslist?page=1&category_id=0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:04] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:04] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:04] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:10] "GET /24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:10] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:10] "GET /comment/list/24 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:11] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:11] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:11] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:15] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:15] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:07:15] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/js/vue.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/focus_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:34] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:39] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:48] "POST /user/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:51] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:51] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:51] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:55] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:56] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:56] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:57] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:09:57] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:11:38] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:11:39] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:11:39] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:11:48] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:12:36] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:12:37] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:12:37] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:13:01] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:13:01] "GET /static/news/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:13:01] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:13:01] "GET /user/base HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:13:01] "GET /static/news/js/user_base_info.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:13:07] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:14:00] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:14:01] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:14:01] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:14:13] "POST /comment/add HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:17:48] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:17:48] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:17:48] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:17:51] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:17:51] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:19:53] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:19:53] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:19:54] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:20:14] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:20:14] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:20:23] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:20:23] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:24:07] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:24:07] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:25:38] "GET /14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:25:38] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:25:38] "GET /comment/list/14 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:25:50] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:25:50] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:25:50] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:26:02] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:26:02] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:26:13] "POST /comment/add HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:26:13] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:26:16] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:26:16] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:26:17] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:36:32] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:36:33] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [03/Jun/2018 17:36:33] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88  * Detected change in '/Users/wds/Desktop/dev/xjzx/views_news.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 893-036-904
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /static/news/js/vue.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /user/image_yzm?1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:28] "GET /comment/list/23 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [04/Jun/2018 09:10:31] "GET /static/news/images/zan_icon.png HTTP/1.1" 304 -

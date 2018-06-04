@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from views_admin import admin_blueprint
 from views_news import new_blueprint
 from views_user import user_blueprint
@@ -35,5 +35,11 @@ def create_app(config):
     app.register_blueprint(admin_blueprint)
     app.register_blueprint(new_blueprint)
     app.register_blueprint(user_blueprint)
+
+# 处理404错误
+    @app.errorhandler(404)
+    def handle404(e):
+        return render_template('news/404.html')
+
 
     return app
