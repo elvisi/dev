@@ -37,9 +37,7 @@ $(function () {
         $(this).children('.input_tip').animate({
             'top': -5,
             'font-size': 12
-        }, 'fast').siblings('input').focus(function () {
-            return false;
-        }).parent().addClass('hotline');
+        }, 'fast').siblings('input').focus().parent().addClass('hotline');
     })
 
     // 输入框失去焦点，如果输入框为空，则提示文字下移
@@ -110,7 +108,9 @@ $(function () {
             $("#login-password-err").show();
             return;
         }
+
         var csrf_token = $('#csrf_token').val();
+
         // 发起登录请求
         $.post('/user/login', {
             'csrf_token': csrf_token,
@@ -120,20 +120,20 @@ $(function () {
             if (data.result == 1) {
                 alert('请填写完整数据');
             } else if (data.result == 2) {
-                alert('账号错误')
+                alert('mobile错误');
             } else if (data.result == 3) {
-                alert('密码错误')
+                alert('密码错误');
             } else if (data.result == 4) {
-                // 登陆成功
                 $('.login_form_con').hide();
-                // 将右上角的用户信息展示出来，并隐藏登录注册div
-                // 隐藏登录注册div
+                //将右上角的用户信息展示出来，并隐藏登录注册div
                 $('.user_btns').hide();
-                // 显示个人信息
                 $('.user_login').show();
-
-                $('.lgin_pic').attr('src',data.avatar);
+                $('.lgin_pic').attr('src', data.avatar);
                 $('#nick_name').text(data.nick_name);
+                //切换收藏、关注状态
+                // $.get('....',{news_id:***},function (data) {
+                //     //
+                // });
             }
         });
     })
@@ -155,7 +155,6 @@ $(function () {
             $(".get_code").attr("onclick", "sendSMSCode();");
             return;
         }
-
 
         if (!mobile) {
             $("#register-mobile-err").show();
@@ -196,7 +195,7 @@ $(function () {
             } else if (data.result == 4) {
                 alert('密码的长度错误')
             } else if (data.result == 5) {
-                alert('账号已经存在')
+                alert('mobile存在')
             } else if (data.result == 6) {
                 $('.to_login').click();
             } else if (data.result == 7) {
@@ -206,29 +205,31 @@ $(function () {
 
     })
 
-   //退出的点击事件
+    //退出的点击事件
     $('#logout').click(function () {
-        $.post('/user/logout',{'csrf_token':$('#csrf_token').val()},function (data) {
-            if (data.result==1){
-                if (location.pathname=='/user/'){
-                     // 当user退出时需要转到首页
-                    location.href='/'; // 在js中重定向
+        $.post('/user/logout', {
+            'csrf_token': $('#csrf_token').val()
+        }, function (data) {
+            if (data.result == 1) {
+                if (location.pathname=='/user/') {
+                    //当user退出时需要转到首页
+                    location.href = '/';//在js中重定向的代码
                 } else {
-                    // 当首页、详细页退出时进行div切换
+                    //当首页、详细页退出时进行div切换
                     $('.user_btns').show();
                     $('.user_login').hide();
+                    //如果是详细页
+                    if(/\/\d+/.test(location.pathname)){
+                        $('.focus').show();
+                        $('.focused').hide();
+                        $('.collection').show();
+                        $('.collected').hide();
+                    }
                 }
             }
-            
         });
-
     });
-
-
 })
-
-
-
 
 var imageCodeId = ""
 
@@ -236,10 +237,9 @@ var imageCodeId = ""
 function generateImageCode() {
     //传递参数的目的是：告诉浏览器这是一次新的请求，不使用缓存的数据展示
     //获取原始的图片地址
-    var src = $('.get_pic_code').attr('src');
-    // 在地址后面加1，再修改图片地址
-    $('.get_pic_code').attr('src', src + 1);
-
+    var src = $('.get_pic_code').attr('src');//==>/user/image_yzm?111
+    //在地址后面加1,再修改图片地址
+    $('.get_pic_code').attr('src', src + 1);//==>/user/image_yzm?1111
 }
 
 // 发送短信验证码
@@ -269,11 +269,9 @@ function sendSMSCode() {
         if (data.result == 1) {
             alert('图片验证码错误');
         } else if (data.result == 2) {
-            $(".get_code").attr("onclick", "sendSMSCode();");
-            alert('请留意短信验证码');
+            alert('请查看短信');
         }
-
-    })
+    });
 }
 
 // 调用该函数模拟点击左侧按钮

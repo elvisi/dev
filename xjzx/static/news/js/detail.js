@@ -84,12 +84,11 @@ $(function () {
 
         if (sHandler.indexOf('comment_up') >= 0) {
             var action = 1;//默认为点赞
-            var $this = $(this);
             if (sHandler.indexOf('has_comment_up') >= 0) {
                 //有如上样式，说明当前处于点赞状态，则取消点赞
                 action = 2;
             }
-
+            var $this = $(this);
             var commentid = $this.attr('commentid');
             $.post('/comment/up/' + commentid, {
                 'csrf_token': $('#csrf_token').val(),
@@ -101,10 +100,8 @@ $(function () {
                     $this.text(data.like_count);
                     if (action == 1) {
                         $this.addClass('has_comment_up');
-
                     } else {
                         $this.removeClass('has_comment_up');
-
                     }
                 }
             });
@@ -131,7 +128,6 @@ $(function () {
         }
     })
 
-
     // 关注当前新闻作者
     $(".focus").click(function () {
         $.post('/follow', {
@@ -145,11 +141,9 @@ $(function () {
                 $('.focus').hide();
                 $('.focused').show();
                 $('.follows>b').text(data.follow_count);
-
             }
-
-        })
-    });
+        });
+    })
 
     // 取消关注当前新闻作者
     $(".focused").click(function () {
@@ -164,13 +158,10 @@ $(function () {
                 $('.focus').show();
                 $('.focused').hide();
                 $('.follows>b').text(data.follow_count);
-
             }
-
-        })
-
+        });
     })
-});
+})
 
 function get_comment_list() {
     $.get('/comment/list/' + $('#news_id').val(), function (data) {

@@ -1,8 +1,8 @@
 """初始化
 
-Revision ID: 54c5b40caf41
+Revision ID: f441ff04b470
 Revises: 
-Create Date: 2018-05-26 21:40:18.062394
+Create Date: 2018-05-26 18:10:19.254314
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '54c5b40caf41'
+revision = 'f441ff04b470'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -24,7 +24,6 @@ def upgrade():
     sa.Column('isDelete', sa.Boolean(), nullable=True),
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(length=10), nullable=True),
-    sa.Column('order', sa.SmallInteger(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_table('user_info',
@@ -52,9 +51,8 @@ def upgrade():
     sa.Column('pic', sa.String(length=50), nullable=True),
     sa.Column('title', sa.String(length=30), nullable=True),
     sa.Column('summary', sa.String(length=200), nullable=True),
-    sa.Column('context', sa.Text(), nullable=True),
+    sa.Column('content', sa.Text(), nullable=True),
     sa.Column('user_id', sa.Integer(), nullable=True),
-    sa.Column('source', sa.String(length=20), nullable=True),
     sa.Column('click_count', sa.Integer(), nullable=True),
     sa.Column('comment_count', sa.Integer(), nullable=True),
     sa.Column('status', sa.SmallInteger(), nullable=True),

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>新经资讯后台管理</title>
-	<link rel="stylesheet" type="text/css" href="/static/admin/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="/static/admin/css/main.css">
+    {% include 'admin/head.html' %}
 	<script type="text/javascript" src="/static/admin/js/echarts.min.js"></script>
 </head>
 <body>
@@ -75,7 +72,7 @@
 					            type:'line',
 					            smooth:true,
 					            itemStyle: {normal: {areaStyle: {type: 'default'}, color: '#f80'}, lineStyle: {color: '#f80'}},
-					            data: {{ count_list }}
+					            data:{{ count_list }}
 					        }],
 					    areaStyle:{
 						        normal:{

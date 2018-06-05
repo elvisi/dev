@@ -1,5 +1,4 @@
 {% extends 'news/base.html' %}
-
 {% block head %}
     <script type="text/javascript" src="/static/news/js/vue.min.js"></script>
     <script type="text/javascript" src="/static/news/js/detail.js"></script>
@@ -21,38 +20,28 @@
             {{ news.content|safe }}
 
             {% if user %}
-                {#                 判断当前用户非作者#}
                 {% if user!=news.user %}
-
                     {% if news in user.news_collect %}
                         <a href="javascript:;" class="collection block-center" style="display: none">收藏</a>
-                        <a href="javascript:;" class="collected block-center"
-                        ><span class="out">已收藏</span>
-                            <span class="over">取消收藏</span></a>
-
-
+                        <a href="javascript:;" class="collected block-center"><span
+                                class="out">已收藏</span><span class="over">取消收藏</span></a>
                     {% else %}
                         <a href="javascript:;" class="collection block-center">收藏</a>
-                        <a href="javascript:;" class="collected block-center"
-                           style="display: none"><span class="out">已收藏</span>
-                            <span class="over">取消收藏</span></a>
-
+                        <a href="javascript:;" class="collected block-center" style="display: none"><span
+                                class="out">已收藏</span><span class="over">取消收藏</span></a>
                     {% endif %}
-
                 {% endif %}
             {% else %}
                 <a href="javascript:;" class="collection block-center">收藏</a>
-                <a href="javascript:;" class="collected block-center"
-                   style="display: none"><span class="out">已收藏</span>
-                    <span class="over">取消收藏</span></a>
-
+                <a href="javascript:;" class="collected block-center" style="display: none"><span
+                        class="out">已收藏</span><span class="over">取消收藏</span></a>
             {% endif %}
 
+
             {% if user %}
-                <div class="comment_form_logout" style="display: none">
+                <div class="comment_form_logout" style="display: none;">
                     登录发表你的评论
                 </div>
-
                 <form class="comment_form">
                     <div class="person_pic">
                         <img src="{{ user.avatar_url }}" alt="用户图标">
@@ -60,21 +49,17 @@
                     <textarea placeholder="请发表您的评论" class="comment_input" id="msg"></textarea>
                     <input type="submit" value="评 论" class="comment_sub">
                 </form>
-
             {% else %}
-
                 <div class="comment_form_logout">
                     登录发表你的评论
                 </div>
-
-                <form class="comment_form" style="display: none">
+                <form class="comment_form" style="display: none;">
                     <div class="person_pic">
-                        <img src="{{ user.avatar_url }}" alt="用户图标">
+                        <img src="" alt="用户图标">
                     </div>
                     <textarea placeholder="请发表您的评论" class="comment_input" id="msg"></textarea>
                     <input type="submit" value="评 论" class="comment_sub">
                 </form>
-
             {% endif %}
 
 
@@ -87,7 +72,7 @@
                     <div class="person_pic fl">
                         <img :src="comment.avatar" alt="用户图标">
                     </div>
-                    <div class="user_name fl">[[ comment.nick_name ]]</div>
+                    <div class="user_name fl">[[comment.nick_name]]</div>
                     <div class="comment_text fl">[[comment.msg]]</div>
 
                     <div class="reply_text_con fl" v-for="cback in comment.cback_list">
@@ -100,7 +85,6 @@
 
                     <a href="javascript:;" v-if="comment.is_like==1" :commentid="comment.id"
                        class="comment_up has_comment_up fr">[[comment.like_count]]</a>
-
                     <a href="javascript:;" v-else :commentid="comment.id"
                        class="comment_up fr">[[comment.like_count]]</a>
 
@@ -112,15 +96,11 @@
                         <input type="reset" value="取消" class="reply_cancel fr">
                     </from>
                 </div>
-
-
             </div>
-
-
         </div>
         <div class="rank_con fr">
             <div class="author_card">
-                <input type="hidden" id="user_id" value="{{ news.user_id }}">
+                <input type="hidden" id="user_id" value="{{ news.user.id }}">
                 <a href="/user/{{ news.user.id }}" class="author_pic"><img src="{{ news.user.avatar_url }}"
                                                                            alt="author_pic"></a>
                 <a href="/user/{{ news.user.id }}" class="author_name">{{ news.user.nick_name }}</a>
@@ -128,33 +108,33 @@
                 <div class="writings"><span>总篇数</span><b>{{ news.user.public_count }}</b></div>
                 <div class="follows"><span>粉丝</span><b>{{ news.user.follow_count }}</b></div>
 
-
                 {% if user %}
 
                     {% if user!=news.user %}
                         {% if news.user in user.follow_user %}
-                            <a href="javascript:;" class="focus fr"style="display: none">关注</a>
-                            <a href="javascript:;" class="focused fr" ><span class="out">已关注</span><span
+                            <a href="javascript:;" class="focus fr" style="display: none;">关注</a>
+                            <a href="javascript:;" class="focused fr"><span class="out">已关注</span><span
                                     class="over">取消关注</span></a>
                         {% else %}
                             <a href="javascript:;" class="focus fr">关注</a>
-                            <a href="javascript:;" class="focused fr" style="display: none"><span class="out">已关注</span><span
+                            <a href="javascript:;" class="focused fr" style="display: none;"><span
+                                    class="out">已关注</span><span
                                     class="over">取消关注</span></a>
                         {% endif %}
-
                     {% endif %}
 
                 {% else %}
                     <a href="javascript:;" class="focus fr">关注</a>
-                    <a href="javascript:;" class="focused fr" style="display: none"><span class="out">已关注</span><span
+                    <a href="javascript:;" class="focused fr" style="display: none;"><span class="out">已关注</span><span
                             class="over">取消关注</span></a>
                 {% endif %}
 
 
             </div>
+
             {% import 'news/macro.html' as macro_func %}
             {{ macro_func.count_list_macro(count_list) }}
+
         </div>
     </div>
 {% endblock %}
-

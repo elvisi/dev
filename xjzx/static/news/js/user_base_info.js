@@ -28,15 +28,12 @@ $(function () {
             'nick_name':nick_name,
             'gender':gender,
             'csrf_token':csrf_token
-
         },function (data) {
-            if (data.result==1){
-                // 修改成功后，需要将页面中昵称的地方，改为新值
+            if(data.result==1){
+                //修改成功后，需要将页面中昵称的地方改为新值
                 $('.user_center_name',parent.document).text(nick_name);
                 $('#nick_name',parent.document).text(nick_name);
             }
-
-
         });
     })
 })
