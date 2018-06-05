@@ -122,4 +122,5 @@ class NewsComment(db.Model, BaseModel):
     like_count = db.Column(db.Integer, default=0)
     comment_id = db.Column(db.Integer, db.ForeignKey('news_comment.id'))
     msg = db.Column(db.String(200))
+    # 关联属性，用于获取当前评论的回复数据
     comments = db.relationship('NewsComment', lazy='dynamic')

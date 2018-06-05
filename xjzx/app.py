@@ -42,4 +42,13 @@ def create_app(config):
         return render_template('news/404.html')
 
 
+    # 访问Redis的连接
+    #读取Redis的配置
+    host=app.config.get('REDIS_HOST')
+    port = app.config.get('REDIS_PORT')
+    redis_db = app.config.get('REDIS_DB')
+    import redis
+    app.redis_client=redis.StrictRedis(host=host,port=port,db=redis_db)
+
+
     return app

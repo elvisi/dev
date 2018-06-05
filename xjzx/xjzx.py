@@ -13,5 +13,10 @@ db.init_app(app)
 Migrate(app, db)
 manager.add_command('db', MigrateCommand)
 
+# 添加管理员的命令
+from super_command import CreateAdminCommand,RegisterUserCommand
+manager.add_command('admin',CreateAdminCommand())
+manager.add_command('regt',RegisterUserCommand())
+
 if __name__ == '__main__':
     manager.run()

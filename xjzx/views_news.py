@@ -166,34 +166,134 @@ def commentadd():
 @new_blueprint.route('/comment/list/<int:news_id>')
 def commentlist(news_id):
     # 根据news_id查询评论数据
-    comment_list = NewsComment.query.filter_by(news_id=news_id).order_by(NewsComment.id.desc())
+    # comment_id = None表示这是一个评论不是一个回复
+    comment_list = NewsComment.query. \
+        filter_by(news_id=news_id, comment_id=None). \
+        order_by(NewsComment.id.desc())
     # 将comment对象构造成json数据
     comment_list2 = []
+
+    # 查询用户对哪些评论点过赞
+    if 'user_id' in session:
+        user_id = session['user_id']
+        commentid_list = current_app.redis_client.lrange('comment%d' % user_id, 0, -1)
+        commentid_list = [int(cid) for cid in commentid_list]
+    else:
+        commentid_list = []
+
     for comment in comment_list:
+        # 判断当前用户是否为此点赞
+        is_like = 0
+        if comment.id in commentid_list:
+            is_like = 1
+
         comment_dict = {
             'avatar': comment.user.avatar_url,
             'nick_name': comment.user.nick_name,
             'msg': comment.msg,
             'create_time': comment.create_time.strftime('%Y-%m-%d %H:%M:%S'),
             'like_count': comment.like_count,
-            'id': comment.id
+            'id': comment.id,
+            'is_like': is_like
         }
+        # 已知评论对象comment，获取回复对象
+        cback_list = []
+        cback_list2 = comment.comments.order_by(NewsComment.id.desc())
+        for cback in cback_list2:
+            cback_dict = {
+                'nick_name': cback.user.nick_name,
+                'msg': cback.msg
+            }
+            cback_list.append(cback_dict)
+        comment_dict['cback_list'] = cback_list
+
         comment_list2.append(comment_dict)
     return jsonify(comment_list=comment_list2)
 
 
-@new_blueprint.route('/comment/up/<int:comment_id>')
+@new_blueprint.route('/comment/up/<int:comment_id>', methods=['POST'])
 def commentup(comment_id):
     # 点赞需要user_id,comment_id
+
+    # 进行处理的标记，1表示点赞，2表示取消点赞
+    action = int(request.form.get('action', '1'))
+    # 获取用户编号
+
     if 'user_id' not in session:
         return jsonify(result=1)
-    user_id=session['user_id']
-    #读取Redis的配置
-    host=current_app.config.get('REDIS_HOST')
-    port = current_app.config.get('REDIS_PORT')
-    db = current_app.config.get('REDIS_DB')
-    import redis
-    redis_client=redis.StrictRedis(host=host,port=port,db=db)
+    user_id = session['user_id']
+    # #读取Redis的配置
+    # host=current_app.config.get('REDIS_HOST')
+    # port = current_app.config.get('REDIS_PORT')
+    # redis_db = current_app.config.get('REDIS_DB')
+    # import redis
+    # redis_client=redis.StrictRedis(host=host,port=port,db=redis_db)
     # 将数据写入到Redis中
-    redis_client.rpush('comment%d' %user_id,comment_id)
-    return jsonify(result=2)
+
+    comment = NewsComment.query.get(comment_id)
+    # 点赞
+    if action == 1:
+        current_app.redis_client.rpush('comment%d' % user_id, comment_id)
+        # 将评论的点赞数据+1
+        comment.like_count += 1
+    # 取消点赞
+    else:
+        current_app.redis_client.lrem('comment%d' % user_id, 0, comment_id)
+        comment.like_count -= 1
+    db.session.commit()
+
+    return jsonify(result=2, like_count=comment.like_count)
+
+
+@new_blueprint.route('/comment/back', methods=['POST'])
+def commentback():
+    # 评论回复：用户user_id 对comment_id进行回复，回复内容为msg
+    # 创建一条新的评论对象：new_id,user_id,comment_id,msg
+    # 接收
+    new_id = request.form.get('news_id')
+    msg = request.form.get('msg')
+    comment_id = request.form.get('comment_id')
+    # 验证
+    if not all([new_id, msg, comment_id]):
+        return jsonify(result=1)
+    if 'user_id' not in session:
+        return jsonify(result=2)
+    user_id = session['user_id']
+    # 处理
+    # 创建对象
+    comment = NewsComment()
+    comment.news_id = int(new_id)
+    comment.user_id = user_id
+    comment.comment_id = comment_id
+    comment.msg = msg
+    # 提交到数据库
+    db.session.add(comment)
+    db.session.commit()
+    # 响应
+    return jsonify(result=3)
+
+
+@new_blueprint.route('/follow', methods=['POST'])
+def follow():
+    # 关注：用户user_id关注用户follow_user_id
+    action = request.form.get('action', '1')
+    follow_user_id = request.form.get('follow_user_id')
+    if not all([follow_user_id, action]):
+        return jsonify(result=1)
+    if 'user_id' not in session:
+        return jsonify(result=2)
+    user_id = session['user_id']
+    # 查询用户对象
+    user = UserInfo.query.get(user_id)
+    follow_user = UserInfo.query.get(follow_user_id)
+    # 判断是否关注
+    if action == '1':
+        # 关注
+        user.follow_user.append(follow_user)
+        follow_user.follow_count += 1
+        # 取消关注
+    else:
+        user.follow_user.remove(follow_user)
+        follow_user.follow_count -= 1
+    db.session.commit()
+    return jsonify(result=3, follow_count=follow_user.follow_count)
