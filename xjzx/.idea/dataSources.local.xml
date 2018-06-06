@@ -9,7 +9,9 @@
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
+      <introspection-schemas>*:xjzx10</introspection-schemas>
       <resolve-scope>xjzx10:</resolve-scope>
+      <unqualified-resolve-schemas>xjzx10:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

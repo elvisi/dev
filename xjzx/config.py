@@ -4,7 +4,7 @@ import os
 
 class Config(object):
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'mysql://name:password@host:port/database'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:mysql9527@localhost:3306/xjzx10'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     # redis配置
     REDIS_HOST = "localhost"
